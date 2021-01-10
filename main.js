@@ -1,4 +1,5 @@
 let organizations = [{}];
+let suggestions = [{}];
 
 class Organization {
     constructor(name, link) {
@@ -36,4 +37,22 @@ function filterCategory(category) {
         }
     }
     return filtered;
+}
+
+class Suggestions {
+    votes = 0;
+    constructor(name, website) {
+        this.name = name;
+        this.website = website;
+        suggestions.push(this);
+    }
+};
+
+function thumbsUp() {
+    votes++;
+    if (votes == 10) {
+        for (var i=0; i < organizations.length; i++) {
+            suggestions.splice(,1)
+        }
+    }
 }
