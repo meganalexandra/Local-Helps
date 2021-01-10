@@ -1,6 +1,5 @@
 let organizations = new Array();
 let suggestions = new Array();
-let donations = new Array();
 
 class Organization {
     constructor(name, link, donations) {
@@ -32,10 +31,8 @@ class Organization {
 };
 
 
-function checkCategory(category, organization) {
-    var d = organization.donations();
-    return d.includes(category);
-    // donations.includes(category)
+function checkCategory(category) {
+    donations.includes(category)
     // for (let i=0; i < donations.length; i++) {
     //     if (donations[i] == category) {
     //         return true;
@@ -53,8 +50,9 @@ function checkCategory(category, organization) {
 function filterCategory(category) {
     let filtered = new Array();
     for (let i=0; i < organizations.length; i++) {
-        if (checkCategory(category, organizations[i])) {
-            filtered.push(organizations[i]);
+        let filtered = new Array();
+        if (checkCategory()) {
+            filtered.push(this);
         }
     }
     return filtered;
@@ -74,10 +72,10 @@ function thumbsUp() {
     votes++;
     if (votes == 10) {
         for (let i=0; i < suggestions.length; i++) {
-            // moves suggestions to the organizations list
-            organizations.push(suggestions[i]);
             // deletes this suggestion from the lists of suggestions
             suggestions.splice(suggestions[i],1);
+            // moves suggestions to the organizations list
+            organizations.push(this);
         }
     }
 }
@@ -256,6 +254,7 @@ function parseListOfCharities() {
         }
     ];
     for (let i = 0; i < json.length; i++) {
+        let donations = new Array();
         // let organization = [];
         for (const [key, value] of Object.entries(json[i])) {
             if (key === "Name") {
@@ -300,13 +299,14 @@ function parseListOfCharities() {
         new Organization(name, link, donations);
     }
 }
-    // parseListOfCharities();
-new Organization("Big Brother", 'https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/'
-    , ["food","clothing"]);
-new Organization( 'Greater Vancouver Food Bank', 'https://foodbank.bc.ca/ways-to-give/donate-food/'
-    , ["feminine hygiene","general hygiene"]);
-    // console.log(organizations);
-filterCategory("food");
+    parseListOfCharities();
+// new Organization("Big Brother", 'https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/'
+//     , ["food","clothing"]);
+// new Organization( 'Greater Vancouver Food Bank', 'https://foodbank.bc.ca/ways-to-give/donate-food/'
+//     , ["feminine hygiene","general hygiene"]);
+    console.log(organizations);
+// filterCategory("food");
+
 
 
 
