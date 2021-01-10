@@ -6,7 +6,7 @@ class Organization {
     constructor(name, link, donations) {
         this.name = name;
         this.link = link;
-        this.donations = donations
+        this.donations = donations;
 
         // var donations = [];
         // organizations.donations = donations;
@@ -274,12 +274,14 @@ function parseListOfCharities() {
         new Organization(name, link, donations);
     }
 }
-    parseListOfCharities();
-    console.log(organizations);
-
+    // parseListOfCharities();
 new Organization("Big Brother", 'https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/'
     , ["food","clothing"]);
 new Organization( 'Greater Vancouver Food Bank', 'https://foodbank.bc.ca/ways-to-give/donate-food/'
     , ["feminine hygiene","general hygiene"]);
+    // console.log(organizations);
+filterCategory("food");
+
+
 
 
