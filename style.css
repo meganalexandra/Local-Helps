@@ -72,6 +72,7 @@ h1 {
 }
 
 #searchButton {
+    alignment: center;
     border-radius: 25px;
     background-color: #FF7F91;
     border: none !important;

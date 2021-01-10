@@ -15,18 +15,18 @@ function read() {
 
 function parseListOfCharities(jsonObject) {
     var charities = {
-        name = jsonObject.stringify("C_name");
-        link = jsonObject.stringify("C_Link");
-        pickUp = jsonObject.stringify("PckUp");
+        jsonObject.stringify("C_name") = name;
+        jsonObject.stringify("C_Link") = link;
+        jsonObject.stringify("PckUp") = pickUp;
         donations = {
-            nonPersishableFood = jsonObject.stringify("NPFood");
-            perishableFood = jsonObject.stringify("PFood");
-            clothing = jsonObject.stringify("Clth");
-            feminineHygeine = jsonObject.stringify("Fhyg");
-            generalHygeine = jsonObject.stringify("Ghyg");
-            childrensToys = jsonObject.stringify("Ctoy");
-            furniture = jsonObject.stringify("Furn");
-            books = jsonObject.stringify("Book");
+            jsonObject.stringify("NPFood") = nonPersishableFood ;
+            jsonObject.stringify("PFood") = perishableFood;
+            jsonObject.stringify("Clth") = clothing;
+            jsonObject.stringify("Fhyg") = feminineHygiene;
+            jsonObject.stringify("Ghyg") = generalHygiene;
+            jsonObject.stringify("Ctoy") = childrensToys;
+            jsonObject.stringify("Furn") = furniture;
+            jsonObject.stringify("Book") = book;
         }
 
         var loc = new charities;
@@ -38,18 +38,18 @@ function parseListOfCharities(jsonObject) {
 }
 
 function addCharity(loc, jsonObject) {
-    name = jsonObject.stringify("C_name");
-    link = jsonObject.stringify("C_Link");
-    pickUp = jsonObject.stringify("PckUp");
+    jsonObject.stringify("C_name") = name;
+    jsonObject.stringify("C_Link") = link;
+    jsonObject.stringify("PckUp") = pickUp;
     donations = {
-        nonPersishableFood = jsonObject.getAsString("NPFood");
-        perishableFood = jsonObject.getAsString("PFood");
-        clothing = jsonObject.getAsString("Clth");
-        feminineHygeine = jsonObject.getAsString("Fhyg");
-        generalHygeine = jsonObject.getAsString("Ghyg");
-        childrensToys = jsonObject.getAsString("Ctoy");
-        furniture = jsonObject.getAsString("Furn");
-        books = jsonObject.getAsString("Book");
+        jsonObject.getAsString("NPFood") = nonPersishableFood;
+        jsonObject.getAsString("PFood") = perishableFood;
+        jsonObject.getAsString("Clth") = clothing;
+        jsonObject.getAsString("Fhyg") = feminineHygiene;
+        jsonObject.getAsString("Ghyg") = generalHygiene;
+        jsonObject.getAsString("Ctoy") = childrensToys;
+        jsonObject.getAsString("Furn") = furniture;
+        jsonObject.getAsString("Book") books;
         charity = new charity(name, link, pickUp, donations);
         charities.addCharity(charity);
     }
