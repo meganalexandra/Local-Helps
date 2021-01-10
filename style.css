@@ -12,7 +12,8 @@ body {
 
 #subPageButton {
     color: #559461;
-    background: white;
+    background: transparent;
+    border: none !important;
 }
 
 h1 {
