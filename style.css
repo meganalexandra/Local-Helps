@@ -2,6 +2,9 @@
 /*    height: 58px;*/
 /*    top: 21px;*/
 /*    left: 109px;*/
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/796508981879111711/797701723690237972/background-header_1.png");
+}
 #main frame{
     width: 1440px;
     height: 857px;
