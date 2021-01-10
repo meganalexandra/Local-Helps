@@ -15,8 +15,8 @@ class Organization {
             "nonPerishableFood" = nonPerishableFood;
             "perishableFood" = perishableFood;
             "clothing" = clothing;
-            "feminineHygeine" = feminineHygeine;
-            "generalHygeine" = generalHygeine;
+            "feminineHygiene" = feminineHygiene;
+            "generalHygiene" = generalHygiene;
             "childrensToys" = childrensToys;
             "furniture" = furniture;
             "books" = books;
