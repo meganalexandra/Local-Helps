@@ -7,16 +7,9 @@ class Organization {
         this.link = link;
         this.donations = donations;
 
-
         organizations.push(this);
-
     }
 };
-
-//
-// function checkCategory(category) {
-//     donations.includes(category)
-// }
 
 function filterCategory(category) {
     let filtered = new Array();
@@ -234,19 +227,19 @@ function parseListOfCharities() {
                 var link = value;
             }
             if ((key === "NPFood") && (value === "1")) {
-                donations.push("non-perishable foods");
+                donations.push("non-perishableFoods");
             }
             if ((key === "PFood") && (value === "1")) {
-                donations.push("perishable foods");
+                donations.push("perishableFoods");
             }
             if ((key === "Clth") && (value === "1")) {
                 donations.push("clothes");
             }
             if ((key === "Fhyg") && (value === "1")) {
-                donations.push("feminine hygiene products");
+                donations.push("feminineHygieneProducts");
             }
             if ((key === "Ghyg") && (value === "1")) {
-                donations.push("general hygiene products");
+                donations.push("generalHygieneProducts");
             }
             if ((key === "Ctoy") && (value === "1")) {
                 donations.push("children's toys");
@@ -261,8 +254,6 @@ function parseListOfCharities() {
         new Organization(name, link, donations);
     }
 }
-    parseListOfCharities();
-    filterCategory("clothes");
     // console.log(organizations);
 
 

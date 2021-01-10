@@ -9,6 +9,8 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    parseListOfCharities();
 </head>
 
 <body>
@@ -61,21 +63,21 @@
 <!--            </div>-->
             <div class="row-rap">
                 <div class="right">
-                    <input type="radio" id="Non-Perishable Foods" name="category"> Non-Perishable Foods
-                    <input type="radio" id="Perishable Foods" name="category" style = "margin-left: 300px"> Perishable Foods
+                    <input type="radio" onclick="filterCategory("non-perishableFoods")" id="Non-Perishable Foods" name="category"> Non-Perishable Foods
+                    <input type="radio" onclick="filterCategory("perishableFoods")" id="Perishable Foods" name="category" style = "margin-left: 300px"> Perishable Foods
                 </div>
             </div>
                 <div class="row-rap">
                     <div class="right">
-                <input type="radio" id="Furniture" name="category"> Furniture
-                <input type="radio" id="General Hygiene Products" name="category" style = "margin-left: 394px"> General Hygiene Products
+                <input type="radio" onclick="filterCategory("furniture")" id="Furniture" name="category"> Furniture
+                <input type="radio" onclick="filterCategory("generalHygieneProducts")" id="General Hygiene Products" name="category" style = "margin-left: 394px"> General Hygiene Products
                 </div>
                     </div>
 
                     <div class="row-rap">
                 <div class="right">
-                <input type="radio" id="Feminine Hygiene Products" name="category"> Feminine Hygiene Products
-                <input type="radio" id="Clothing" name="category" style = "margin-left: 263px"> Clothing
+                <input type="radio" onclick="filterCategory("feminineHygieneProducts")" id="Feminine Hygiene Products" name="category"> Feminine Hygiene Products
+                <input type="radio" onclick="filterCategory("clothes")" id="Clothing" name="category" style = "margin-left: 263px"> Clothing
                         </div>
             </div>
         </div>

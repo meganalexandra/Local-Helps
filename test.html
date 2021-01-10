@@ -2,9 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <style>
+        #map {
+            height: 400px;
+            width:100%
+        }
+    </style>
 </head>
 <body>
+<h1>My Local Organizations</h1>
+<div id="map"></div>
 
+<script>
+    function initMap(){
+        var options = {
+            zoom:12,
+            center: {lat: 49.26038, lng:-123.11336}
+        }
+        var map = new
+        google.maps.Map(document.getElementById("map"), options);
+
+        var dewc = new google.maps.Marker({
+            position:{lat:49.282330, lng:-123.102150},
+            map:map
+        })
+
+        var bb = new google.maps.Marker({
+            position:{lat: 49.252430, lng: -123.080130},
+            map:map
+        })
+
+        var wts = new google.maps.Marker({
+            position:{lat: 49.276160, lng: -123.127760},
+            map:map
+        })
+
+        var vgh = new google.maps.Marker({
+            position:{lat: 49.281170, lng: -123.052150},
+            map:map
+        })
+        var hpn = new google.maps.Marker({
+            position:{lat: 49.269610, lng: -123.014670},
+            map:map
+        })
+
+        var vwhc = new google.maps.Marker({
+            position:{lat: 49.281990, lng: -123.105610},
+            map:map
+        })
+
+        var vgfb = new google.maps.Marker({
+            position:{lat: 49.249560, lng: -122.922610},
+            map:map
+        })
+
+        var ch = new google.maps.Marker({
+            position:{lat: 49.275340, lng: -123.126900},
+            map:map
+        })
+
+        var s = new google.maps.Marker({
+            position:{lat: 49.281510, lng: -123.092380},
+            map:map
+        })
+
+
+        var wdc = new google.maps.Marker({
+            position:{  lat: 49.283770, lng: -123.096430},
+            map:map
+        })
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYq1n34jhN6vn4VmK_F4ds9HWBccd4ILA&callback=initMap">
+
+</script>
 </body>
 </html>
