@@ -78,7 +78,7 @@ function thumbsUp() {
     }
 }
 
-function makeCharity(name, link, pickUp) {
+function makeOrganization(name, link, pickUp) {
     let name = "";
     let link = "";
     let pickUp = "";
@@ -91,6 +91,7 @@ function makeCharity(name, link, pickUp) {
     if (key === pickUp) {
         pickUp === Object.values(pickUp);
     }
+    organization = new Organization(name, link pickUp);
 }
 
 
