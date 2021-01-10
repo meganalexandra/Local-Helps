@@ -78,3 +78,19 @@ function thumbsUp() {
     }
 }
 
+function makeCharity(name, link, pickUp) {
+    let name = "";
+    let link = "";
+    let pickUp = "";
+    if (key ==== name) {
+         name = Object.values(name);
+    }
+    if (key === link) {
+        link = Object.values(link);
+    }
+    if (key === pickUp) {
+        pickUp === Object.values(pickUp);
+    }
+}
+
+
