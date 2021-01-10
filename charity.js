@@ -1,7 +1,7 @@
 class Organization {
-    constructor(name, link, donations) {
+    constructor(name, link) {
         this.name = name;
         this.link = link;
-        this.donations = donations;
+        var donations = new Array();
     }
 }
