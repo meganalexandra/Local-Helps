@@ -73,6 +73,7 @@ h1 {
     padding: 10px 60px;
     margin-left: 600px;
     margin-right: 600px;
+    cursor: pointer;
 }
 
 #suggestionBox {
@@ -96,6 +97,7 @@ h1 {
 }
 
 .fields {
+    width: 200px;
     color: #FF7F91;
     font-family: Helvetica;
     font-size: large;
@@ -114,13 +116,14 @@ h1 {
 }
 
 input[type=text], select {
-    width: 100%;
+    width: 50%;
     padding: 12px 15px;
-    margin: 8px 0;
-    display: inline-block;
+    /*margin: 8px 0;*/
+    margin-left: 600px;
+    /*display: inline-block;*/
     border: 1px solid #ccc;
     border-radius: 25px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 input[type=submit] {
@@ -145,7 +148,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+#searchButton:hover {
     background-color: #ff667b;
 }
 

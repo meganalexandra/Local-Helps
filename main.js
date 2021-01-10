@@ -7,7 +7,9 @@ class Organization {
         this.link = link;
         this.donations = donations;
 
+
         organizations.push(this);
+
     }
 };
 
@@ -259,9 +261,9 @@ function parseListOfCharities() {
         new Organization(name, link, donations);
     }
 }
+    parseListOfCharities();
     filterCategory("food");
-    parseListOfCharities()
-    console.log(organizations);
+    // console.log(organizations);
 
 
 
