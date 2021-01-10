@@ -1,5 +1,4 @@
 # LocalHelps
-Local Helps is a web appliation made to help users easily find local charities that accpet their donations. 
-Users can filter the donations they have including non-perishable foods, clothing, female hygiene, etc. and a list of 
-local organizations that fit the donation criteria will appear. 
+
+LocalHelps is a web application built to help charitable givers connect with local non-profit organizations and charities who are willing to accept their donations. LocalHelps allows users to specify which items they’ll be donating, by choosing from a list of items ranging from non-perishable foods to feminine hygiene products. Users are then able to find a list of local organizations that accept their specific donation items.
 
