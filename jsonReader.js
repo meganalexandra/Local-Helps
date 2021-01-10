@@ -1,4 +1,3 @@
-//comment
 function parseListOfCharities() {
     const json = [
         {
