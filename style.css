@@ -110,9 +110,11 @@ h1 {
     flex: 1;
 }
 
-.flex-child left{
-    child-align: right;
-}
+
+
+/*.flex-child left{*/
+/*    child-align: right;*/
+/*}*/
 
 div.row-rap {
     width: 100%;
