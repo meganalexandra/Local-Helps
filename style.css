@@ -14,14 +14,16 @@ h1 {
     X-constraint: Left;
     Y-constraint: Top;
     color: #559461;
-    font-family: Rockwell;
+    font-family: Helvetica;
     font-size: 49.5px;
     align: Left;
     vertical-align: Center;
     letter-spacing: 0.49px;
 
 }
-
+#sp1 {
+    text-align: center;
+}
 #heart {
     width: 35.75px;
     height: 41.24px;
@@ -47,12 +49,12 @@ h1 {
     /*H: 110.82px;*/
     color: #1B1B1B;
     text-style: web-h1;
-    font-family: Raleway;
+    font-family: Helvetica;
     font-style: bold;
     font-size: 48px;
     line-height: 58px;
     line-height: 103%;
-    align: Center;
+    text-align: center;
     vertical-align: Top;
     letter-spacing: 0.2px;
     number-case: Lining;
