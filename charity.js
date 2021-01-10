@@ -1,3 +1,5 @@
+let organizations = [{}];
+
 class Organization {
     constructor(name, link) {
         this.name = name;
@@ -12,10 +14,9 @@ class Organization {
 
 }
 
-let organizations = [{}];
 
 function filterCategory() {
     for (let i=0; i < organizations.length; i++) {
-        const filtered = donations.filter(word => word == "category");
+        const filtered = this.donations.filter(word => word == "category");
     }
 }
