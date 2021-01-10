@@ -51,7 +51,7 @@ function checkCategory(category) {
 function filterCategory(category) {
     let filtered = new Array();
     for (let i=0; i < organizations.length; i++) {
-        if (checkCategory()) {
+        if (this.checkCategory()) {
             filtered.push(this);
         }
     }
