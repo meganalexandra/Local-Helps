@@ -9,6 +9,8 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="style.css"/>
+
+<!--    <script type="application/javascript">displayNames()</script>-->
 </head>
 <body>
 <div id="header">
@@ -28,17 +30,11 @@
 
 <div id="suggestionBox" class="center">
     <script>
-        function displayNames(filtered) {
-            for (let i=0; i < filtered.length; i++) {
-                var nameText = (filtered[i].name);
-                <p> nameText </p>
-            }
+        for (let i=0; i < filtered.length;i++) {
+            document.write(filtered[i].name + "<br>");
         }
+        document.write(filtered[0].name + "<br>");
     </script>
-<!--    <p id="name"> </p>-->
-<!--    <p id="link"> </p>-->
-<!--    <p id="name"> </p>-->
-<!--    <p id="name"> </p>-->
 </div>
 
 <div id="search">

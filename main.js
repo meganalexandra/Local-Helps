@@ -1,5 +1,6 @@
 let organizations = new Array();
 let suggestions = new Array();
+let filtered = new Array();
 
 class Organization {
     constructor(name, link, donations) {
@@ -12,16 +13,15 @@ class Organization {
 };
 
 function filterCategory(category) {
-    filtered.length = ;
+    filtered.length = 0;
     for (let i=0; i < organizations.length; i++) {
         if (organizations[i].donations.includes(category)) {
             filtered.push(organizations[i]);
         }
     }
-    return filtered;
-    console.log(filtered);
-    // displayNames(filtered);
     // return filtered;
+    // console.log(filtered);
+    // displayNames(filtered);
 }
 
 class Suggestions {
@@ -254,7 +254,6 @@ function parseListOfCharities() {
         }
         new Organization(name, link, donations);
     }
-    let filtered = new Array();
 }
 
 
