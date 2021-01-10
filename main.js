@@ -1,4 +1,4 @@
-let organizations = [{}];
+let organizations = new Array();
 let suggestions = [{}];
 
 class Organization {
@@ -23,9 +23,12 @@ class Organization {
         organizations.push(this);
         // console.log(organizations);
         // console.log(JSON.stringify(organizations));
-        console.log(organizations);
     }
+    // function addDonation(donation) {
+    //     donations.push(donation)
+    // }
 };
+
 
 function checkCategory(category) {
     for (let i=0; i < donations.length; i++) {
@@ -35,6 +38,12 @@ function checkCategory(category) {
         return false;
     }
 }
+
+// function filterCategory() {
+//     for (let i=0; i < organizations.length; i++) {
+//         const filtered = this.donations.filter(word => word == "category");
+//     }
+// }
 
 function filterCategory(category) {
     let filtered = [];
@@ -231,7 +240,6 @@ function parseListOfCharities() {
             "Book": "0"
         }
     ];
-
     for (let i = 0; i < json.length; i++) {
         // let organization = [];
         for (const [key, value] of Object.entries(json[i])) {
@@ -241,15 +249,15 @@ function parseListOfCharities() {
             if (key === "C_Link") {
                 var link = value;
             }
-            new Organization(name, link);
             // if (key === pickUp) {
             //     pickUp === Object.values(pickUp);
             // }
-
+            new Organization(name, link);
             // organization.push(`${key}: ${value}`);
             // if (key === "Name") {
             //     // console.log(`${key}: ${value}`);
             //     console.log(value);
+            console.log(organizations);
 
         }
     }
@@ -257,18 +265,7 @@ function parseListOfCharities() {
 }
 
 parseListOfCharities();
-// function makeOrganization(name, link) {
-//     // let pickUp = "";
-//     if (key === "Name") {
-//          var name = Object.values(name);
-//     }
-//     if (key === "C_Link") {
-//         var link = Object.values(link);
-//     }
-//     // if (key === pickUp) {
-//     //     pickUp === Object.values(pickUp);
-//     // }
-//     new Organization(name, link);
+
 
 
 
