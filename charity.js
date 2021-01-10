@@ -4,4 +4,11 @@ class Organization {
         this.link = link;
         var donations = new Array();
     }
+
+    addDonation(donation) {
+        donations.add(donation)
+    }
+
+
+
 }
