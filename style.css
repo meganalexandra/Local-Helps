@@ -23,6 +23,8 @@ h1 {
 }
 #sp1 {
     text-align: center;
+    color: #949494;
+    font-size: medium;
 }
 #heart {
     width: 35.75px;
@@ -48,18 +50,10 @@ h1 {
     /*W: 640px;*/
     /*H: 110.82px;*/
     color: #1B1B1B;
-    text-style: web-h1;
     font-family: Helvetica;
     font-style: bold;
-    font-size: 48px;
-    line-height: 58px;
-    line-height: 103%;
+    font-size: 350%;
     text-align: center;
-    vertical-align: Top;
-    letter-spacing: 0.2px;
-    number-case: Lining;
-    number-spacing: Proportional;
-    color-Style: title;
     fill: Solid;
 }
 
