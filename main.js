@@ -262,6 +262,31 @@ function parseListOfCharities() {
             if (key === "C_Link") {
                 var link = value;
             }
+            if ((key === "NPFood") && (value === 1)) {
+                donations.concat(value);
+            }
+            if ((key === "PFood") && (value === 1)){
+                donations.concat(value);
+            }
+            if ((key === "Clth") && (value === 1)) {
+                donations.concat(value);
+            }
+            if ((key === "Fhyg") && (value === 1)) {
+                donations.concat(value);
+            }
+            if ((key === "Ghyg") && (value === 1)) {
+                donations.concat(value);
+            }
+            if ((key === "Ctoy") && (value === 1)) {
+                donations.concat(value);
+            }
+            if ((key === "Furn") && (value === 1)) {
+                donations.concat(value);
+            }
+            if ((key === "Book") && (value === 1)) {
+                donations.concat(value);
+            }
+
             // if (key === pickUp) {
             //     pickUp === Object.values(pickUp);
             // }
