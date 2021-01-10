@@ -6,8 +6,14 @@ body {
     width: 1440px;
     height: 857px;
 }
+.right {
+    position:absolute;
+    right: 0px;
+    padding: 20px;
+}
 
 #subPageButton {
+    font-size: small;
     color: #559461;
     background: transparent;
     border: none !important;
