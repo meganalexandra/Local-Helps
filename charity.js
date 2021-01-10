@@ -2,11 +2,11 @@ class Organization {
     constructor(name, link) {
         this.name = name;
         this.link = link;
-        var donations = new Array();
+        var donations = [];
     }
 
     addDonation(donation) {
-        donations.add(donation)
+        donations.push(donation)
     }
 
 
