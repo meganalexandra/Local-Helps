@@ -25,7 +25,6 @@ class Organization {
 
         console.log(JSON.stringify(organizations));
     }
-
     // function addDonation(donation) {
     //     donations.push(donation)
     // }
