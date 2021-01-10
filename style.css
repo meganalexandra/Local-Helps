@@ -74,8 +74,20 @@ h1 {
     background-color: #FF7F91;
     color: white;
     font-family: Helvetica;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 40px;
+}
+
+#suggestionBox {
+    border-radius: 25px;
+    background-color: #C4C4C4;
+    opacity: 60%;
+    padding: 10px 60px;
+}
+
+#fields {
+    color: #FF7F91;
+    font-family: Helvetica;
+    font-size: large;
 }
 
 
