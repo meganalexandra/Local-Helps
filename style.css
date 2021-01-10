@@ -1,4 +1,18 @@
-h1 {text-align: center;}
+h1 {X: 122px;
+    Y: 12px;
+    W: 255.96px;
+    H: 77px;
+    color: #559461;
+}
 
-h2 {text-align: center}
+#heart {
+    X: 369.5px;
+    Y: 25.75px;
+    W: 35.75px;
+    H: 41.25px;
+    color: #FF7F91;
+}
+
+
+
 
