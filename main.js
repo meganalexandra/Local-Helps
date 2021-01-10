@@ -91,7 +91,7 @@ function makeOrganization(name, link, pickUp) {
     if (key === pickUp) {
         pickUp === Object.values(pickUp);
     }
-    organization = new Organization(name, link pickUp);
+    organization = new Organization(name, link, pickUp);
 }
 
 
