@@ -1,18 +1,18 @@
-class JsonReader {
-    var source;
-}
+// class JsonReader {
+//     var source;
+// }
+//
+// function jsonReader(source) {
+//     this.source = source;
+// }
+//
+// function read() {
+//     var jsonData = readFile(source);
+//     jsonObject = new JSONObject(jsonData);
+//     return parseListOfCharities(jsonObject);
+// }
 
-function jsonReader(source) {
-    this.source = source;
-}
-
-function read() {
-    var jsonData = readFile(source);
-    jsonObject = new JSONObject(jsonData);
-    return parseListOfCharities(jsonObject);
-}
-
-function parseListOfCharities(jsonObject) {
+function parseListOfCharities() {
     const json = [
         {
             "Name": "Big Brother",
@@ -59,14 +59,17 @@ function parseListOfCharities(jsonObject) {
             "C_Link": "https://wish-vancouver.net/about/our-board/get-involved/wish-list/", "PckUp": "1", "C_LocG": "DT", "C_LocF": "334 Alexander St, Vancouver, BC V6A 1C3", "ThUP": "10", "ThDW": "0", "NPFood": "0", "PFood": "0", "Clth": "1", "Fhyg": "1", "Ghyg": "1", "Ctoy": "0", "Furn": "0", "Book": "0"
         }
     ];
-    console.log(json);
-    for (i = 0; i < charities.length; i++) {
-        charity = charities[i];
-        addCharity(charities, charity);
+    for (let i = 0; i < json.length; i++) {
+        for (const [key, value] of Object.entries(json[i])) {
+            console.log(`${key}: ${value}`);
+        }
     }
+    // for (i = 0; i < charities.length; i++) {
+    //     charity = charities[i];
+    //     addCharity(charities, charity);
+    // }
 }
-read();
-}
+parseListOfCharities();
 
 
 
