@@ -27,10 +27,32 @@
 </div>
 
 <div id="suggestionBox" class="center">
-    <h4 id="fields"> Charity Name </h4> <br>
-    <h4 id="fields"> Website Link </h4><br>
-    <h4 id="fields"> Location </h4><br>
-    <h4 id="fields"> Donations </h4><br>
+    <form>
+        <label for="oname"><h4 class="fields"> Organization Name </h4></label>
+        <input type="text" id="oname" name="organizationname" placeholder="Organization name...">
+
+        <label for="link"><h4 class="fields"> Website Link </h4><br></label>
+        <input type="text" id="link" name="link" placeholder="Organization link..">
+
+        <label for="location">
+            <h4 class="fields"> Location </h4><br></label>
+        <input type="text" id="location" name="location" placeholder="Location..">
+
+        <label for="location">
+            <h4 class="fields"> Donations </h4><br> </label>
+        <select id="location" name="location">
+            <option value="npFood">Non-Perishable Food</option>
+            <option value="pFood">Perishable Food</option>
+            <option value="clothing">Clothing</option>
+            <option value="pFood">Perishable Food</option>
+            <option value="pFood">Perishable Food</option>
+            <option value="pFood">Perishable Food</option>
+            <option value="pFood">Perishable Food</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
 </div>
 <br>
 <button id="searchButton" class="center"> SUBMIT </button>
