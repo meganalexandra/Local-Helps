@@ -10,6 +10,11 @@ body {
     height: 857px;
 }
 
+#subPageButton {
+    color: #559461;
+    background: white;
+}
+
 h1 {
     X-constraint: Left;
     Y-constraint: Top;
@@ -26,19 +31,19 @@ h1 {
     color: #949494;
     font-size: medium;
 }
-#heart {
-    width: 35.75px;
-    height: 41.24px;
-    top:25.7px;
-    left:369.5px;
-    X: 369.5px;
-    Y: 25.75px;
-    W: 35.75px;
-    H: 41.25px;
-    X-constraint: Scale;
-    Y-constraint: Scale;
-    color: #FF7F91;
-}
+/*#heart {*/
+/*    width: 35.75px;*/
+/*    height: 41.24px;*/
+/*    top:25.7px;*/
+/*    left:369.5px;*/
+/*    X: 369.5px;*/
+/*    Y: 25.75px;*/
+/*    W: 35.75px;*/
+/*    H: 41.25px;*/
+/*    X-constraint: Scale;*/
+/*    Y-constraint: Scale;*/
+/*    color: #FF7F91;*/
+/*}*/
 
 #header {
     display: flex;
@@ -54,7 +59,23 @@ h1 {
     font-style: bold;
     font-size: 350%;
     text-align: center;
-    fill: Solid;
+}
+#donationButton {
+    border-radius: 25px;
+    background-color: #C4C4C4;
+    color: black;
+    font-family: Helvetica;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#searchButton {
+    border-radius: 25px;
+    background-color: #FF7F91;
+    color: white;
+    font-family: Helvetica;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 
