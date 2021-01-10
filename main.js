@@ -51,8 +51,11 @@ class Suggestions {
 function thumbsUp() {
     votes++;
     if (votes == 10) {
-        for (var i=0; i < organizations.length; i++) {
-            suggestions.splice(,1)
+        for (let i=0; i < suggestions.length; i++) {
+            // deletes this suggestion from the lists of suggestions
+            suggestions.splice(suggestions[i],1);
+            // moves suggestions to the organizations list
+            organizations.push(this);
         }
     }
 }
