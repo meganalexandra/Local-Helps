@@ -2,11 +2,28 @@ let organizations = [{}];
 let suggestions = [{}];
 
 class Organization {
-    constructor(name, link) {
+    constructor(name, link, address, pickup) {
         this.name = name;
         this.link = link;
         var donations = [];
+        organizations.donations = donations;
+        console.log(organizations);
+        this.address = address;
+        pickup = null;
+        var donations = {
+            "nonPerishableFood" = nonPerishableFood;
+            "perishableFood" = perishableFood;
+            "clothing" = clothing;
+            "feminineHygeine" = feminineHygeine;
+            "generalHygeine" = generalHygeine;
+            "childrensToys" = childrensToys;
+            "furniture" = furniture;
+            "books" = books;
+        }
         organizations.push(this);
+        console.log(organizations);
+
+        console.log(JSON.stringify(organizations));
     }
 
     // function addDonation(donation) {
