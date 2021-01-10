@@ -264,10 +264,10 @@ function parseListOfCharities() {
                 var link = value;
             }
             if ((key === "NPFood") && (value === "1")) {
-                donations.push("non-perishable food");
+                donations.push("non-perishable foods");
             }
-            if ((key === "PFood") && (value === "1")){
-                donations.push("perishable food");
+            if ((key === "PFood") && (value === "1")) {
+                donations.push("perishable foods");
             }
             if ((key === "Clth") && (value === "1")) {
                 donations.push("clothes");
@@ -285,7 +285,7 @@ function parseListOfCharities() {
                 donations.push("furniture");
             }
             if ((key === "Book") && (value === "1")) {
-                donations.push("book");
+                donations.push("books");
             }
             // if (key === pickUp) {
             //     pickUp === Object.values(pickUp);
