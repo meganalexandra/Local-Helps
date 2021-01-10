@@ -32,7 +32,6 @@ class Organization {
 };
 
 
-
 function checkCategory(category) {
     for (let i=0; i < donations.length; i++) {
         if (donations[i] == category) {
