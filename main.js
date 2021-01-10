@@ -286,7 +286,6 @@ function parseListOfCharities() {
             if ((key === "Book") && (value === 1)) {
                 donations.concat(value);
             }
-
             // if (key === pickUp) {
             //     pickUp === Object.values(pickUp);
             // }
