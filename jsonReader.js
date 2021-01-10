@@ -52,6 +52,7 @@ function addCharity(loc, jsonObject) {
         books = jsonObject.getAsString("Book");
         charity = new charity(name, link, pickUp, donations);
         charities.addCharity(charity);
+    }
 }
 
 
