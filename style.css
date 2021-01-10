@@ -145,7 +145,7 @@ input[type=submit]:hover {
 
 div.row-rap {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 div.row-rap .right, div.row-rap .left {
@@ -154,6 +154,8 @@ div.row-rap .right, div.row-rap .left {
     font-family: Helvetica;
     color: black;
 }
+
+
 
 
 
