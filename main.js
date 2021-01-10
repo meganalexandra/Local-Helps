@@ -7,45 +7,16 @@ class Organization {
         this.link = link;
         this.donations = donations;
 
-        // var donations = [];
-        // organizations.donations = donations;
-        // this.address = address;
-        // pickup = null;
-        // var donations = {
-        //     "nonPerishableFood" = nonPerishableFood;
-        //     "perishableFood" = perishableFood;
-        //     "clothing" = clothing;
-        //     "feminineHygiene" = feminineHygiene;
-        //     "generalHygiene" = generalHygiene;
-        //     "childrensToys" = childrensToys;
-        //     "furniture" = furniture;
-        //     "books" = books;
-        // }
+
         organizations.push(this);
-        // console.log(organizations);
-        // console.log(JSON.stringify(organizations));
+
     }
-    // function addDonation(donation) {
-    //     donations.push(donation)
-    // }
 };
 
 
 function checkCategory(category) {
     donations.includes(category)
-    // for (let i=0; i < donations.length; i++) {
-    //     if (donations[i] == category) {
-    //         return true;
-    //     }
-    //     return false;
-    // }
 }
-
-// function filterCategory() {
-//     for (let i=0; i < organizations.length; i++) {
-//         const filtered = this.donations.filter(word => word == "category");
-//     }
-// }
 
 function filterCategory(category) {
     let filtered = new Array();
@@ -287,25 +258,12 @@ function parseListOfCharities() {
             if ((key === "Book") && (value === "1")) {
                 donations.push("books");
             }
-            // if (key === pickUp) {
-            //     pickUp === Object.values(pickUp);
-            // }
-            // organization.push(`${key}: ${value}`);
-            // if (key === "Name") {
-            //     // console.log(`${key}: ${value}`);
-            //     console.log(value);
-            // }
         }
         new Organization(name, link, donations);
     }
 }
     parseListOfCharities();
-// new Organization("Big Brother", 'https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/'
-//     , ["food","clothing"]);
-// new Organization( 'Greater Vancouver Food Bank', 'https://foodbank.bc.ca/ways-to-give/donate-food/'
-//     , ["feminine hygiene","general hygiene"]);
     console.log(organizations);
-// filterCategory("food");
 
 
 
