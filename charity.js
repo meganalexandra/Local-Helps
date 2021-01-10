@@ -14,9 +14,12 @@ class Organization {
 
 }
 
-
 function filterCategory() {
     for (let i=0; i < organizations.length; i++) {
         const filtered = this.donations.filter(word => word == "category");
     }
+}
+
+function filterDonations(donation) {
+
 }
