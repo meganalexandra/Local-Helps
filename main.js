@@ -5,6 +5,7 @@ class Organization {
     constructor(name, link, address, pickup) {
         this.name = name;
         this.link = link;
+
         var donations = [];
         organizations.donations = donations;
         console.log(organizations);
