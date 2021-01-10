@@ -21,12 +21,12 @@ class Organization {
 function filterCategory(category) {
     let filtered = new Array();
     for (let i=0; i < organizations.length; i++) {
-        if (this.donations.includes(category)) {
-            filtered.push(this);
+        if (organizations[i].donations.includes(category)) {
+            filtered.push(organizations[i]);
         }
     }
+    console.log(filtered);
     return filtered;
-    console.log(filtered)
 }
 
 class Suggestions {
@@ -262,7 +262,7 @@ function parseListOfCharities() {
     }
 }
     parseListOfCharities();
-    filterCategory("food");
+    filterCategory("clothes");
     // console.log(organizations);
 
 
