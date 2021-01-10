@@ -3,6 +3,7 @@ class Organization {
         this.name = name;
         this.link = link;
         var donations = [];
+        organizations.push(this);
     }
 
     // function addDonation(donation) {
