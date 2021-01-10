@@ -46,9 +46,16 @@ function parseListOfCharities() {
         }
     ];
     for (let i = 0; i < json.length; i++) {
+        // let organization = [];
         for (const [key, value] of Object.entries(json[i])) {
-            console.log(`${key}: ${value}`);
+            // organization.push(`${key}: ${value}`);
+            if (key === "Name") {
+                // console.log(`${key}: ${value}`);
+                console.log(value);
+
+            }
         }
+        // console.log(organization);
     }
 }
 parseListOfCharities();
