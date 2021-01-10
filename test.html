@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <style>
@@ -12,7 +14,20 @@
     </style>
 </head>
 <body>
-<h1>My Local Organizations</h1>
+<div id="header">
+    <img id="logo" src="https://cdn.discordapp.com/attachments/796508981879111711/797838081029308496/localhelpslogo.png"
+         width = 25% height = 10%>
+    <div class="right">
+        <button id="subPageButton"> <a href="index.html"> Home </a></button>
+        <button id="subPageButton"> <a href="suggest.html"> Suggest </a> </button>
+        <button id="subPageButton"> <a href="about.html"> About </a> </button>
+        <button id="subPageButton"> <a href="test.html"> Map </a> </button>
+    </div>
+</div>
+<div id="message">
+    <h5> My Local Organizations </h5>
+    <p id = "sp1"> These are the organizations near you!</p>
+</div>
 <div id="map"></div>
 
 <script>
