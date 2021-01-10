@@ -32,8 +32,10 @@ class Organization {
 };
 
 
-function checkCategory(category) {
-    donations.includes(category)
+function checkCategory(category, organization) {
+    var d = organization.donations();
+    return d.includes(category);
+    // donations.includes(category)
     // for (let i=0; i < donations.length; i++) {
     //     if (donations[i] == category) {
     //         return true;
@@ -51,8 +53,8 @@ function checkCategory(category) {
 function filterCategory(category) {
     let filtered = new Array();
     for (let i=0; i < organizations.length; i++) {
-        if (this.checkCategory()) {
-            filtered.push(this);
+        if (checkCategory(category, organizations[i])) {
+            filtered.push(organizations[i]);
         }
     }
     return filtered;
@@ -72,10 +74,10 @@ function thumbsUp() {
     votes++;
     if (votes == 10) {
         for (let i=0; i < suggestions.length; i++) {
+            // moves suggestions to the organizations list
+            organizations.push(suggestions[i]);
             // deletes this suggestion from the lists of suggestions
             suggestions.splice(suggestions[i],1);
-            // moves suggestions to the organizations list
-            organizations.push(this);
         }
     }
 }
