@@ -29,16 +29,21 @@
 
 <div id="suggestionBox" class="center">
     <form>
-        <label for="oname"><h4 class="fields"> Organization Name </h4></label>
-        <input type="text" id="oname" name="organizationname" placeholder="Organization name..." style = "margin-left: 263px; margin-top: -350px">
-
+        <div style="background-color:#000000; display: inline-block">
+        <label for="oname"><h4 class="fields"> Organization Name </h4> </label>
+        <input type="text" id="oname" name="organizationname" placeholder="Organization name..."
+               style="position: absolute; top: 400px; right: 200px">
+        </div>
+        <div>
         <label for="link"><h4 class="fields"> Website Link </h4><br></label>
         <input type="text" id="link" name="link" placeholder="Organization link.." style = "margin-left: 263px">
-
+        </div>
+        <div>
         <label for="location">
             <h4 class="fields"> Location </h4><br></label>
         <input type="text" id="location" name="location" placeholder="Location.." style = "margin-left: 263px">
-
+        </div>
+        <div>
         <label for="location">
             <h4 class="fields"> Donations </h4><br> </label>
         <select id="location" name="location" style = "margin-left: 263px">
@@ -50,6 +55,7 @@
             <option value="toys">Children's Toys</option>
             <option value="books">Books</option>
         </select>
+        </div>
     </form>
 </div>
 <br>
