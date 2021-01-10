@@ -15,8 +15,22 @@ function read() {
 
 function parseListOfCharities(jsonObject) {
     const json = [
-        {"Name": "Big Brother",
-            "C_Link": "https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/", "PckUp": "1", "C_LocG": "EV", "C_LocF": "1193 Kingsway Unit 102, Vancouver, BC V5V 3C9", "ThUP": "10", "ThDW": "0", "NPFood": "0", "PFood": "0", "Clth": "1", "Fhyg": "0", "Ghyg": "0", "Ctoy": "1", "Furn": "0", "Book": "1"
+        {
+            "Name": "Big Brother",
+            "C_Link": "https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/",
+            "PckUp": "1",
+            "C_LocG": "EV",
+            "C_LocF": "1193 Kingsway Unit 102, Vancouver, BC V5V 3C9",
+            "ThUP": "10",
+            "ThDW": "0",
+            "NPFood": "0",
+            "PFood": "0",
+            "Clth": "1",
+            "Fhyg": "0",
+            "Ghyg": "0",
+            "Ctoy": "1",
+            "Furn": "0",
+            "Book": "1"
         },
         {"Name" : "Downtown Eastside Women's Centre",
             "C_Link": "https://dewc.ca/donate", "PckUp": "0", "C_LocG": "WV", "C_LocF": "302 Columbia St, Vancouver, BC V6A 4J1", "ThUP": "10", "ThDW": "0", "NPFood": "0", "PFood": "0", "Clth": "1", "Fhyg": "0", "Ghyg": "1", "Ctoy": "0", "Furn": "0", "Book": "0"
