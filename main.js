@@ -2,7 +2,7 @@ let organizations = [{}];
 let suggestions = [{}];
 
 class Organization {
-    constructor(name, link) {
+    constructor(name, link, donation) {
         this.name = name;
         this.link = link;
 
