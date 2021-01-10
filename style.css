@@ -64,6 +64,11 @@ h1 {
     padding: 10px 60px
 }
 #suggestionBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 658px;
+    height: 221px;
     border-radius: 25px;
     background-color: #C4C4C4;
     opacity: 60%;
@@ -83,6 +88,18 @@ h1 {
 .flex-child{
     flex: 1;
 }
+
+.flex-child left{
+    child-align: right;
+}
+
+/*.flex-child left{*/
+/*    align-items: flex-end;*/
+/*}*/
+
+/*.flex-child right{*/
+/*    align-items: flex-start;*/
+/*}*/
 
 
 
