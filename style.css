@@ -90,6 +90,7 @@ h1 {
 .center {
     margin: auto;
 }
+
 .button{
     display: flex;
     justify-content: center;
