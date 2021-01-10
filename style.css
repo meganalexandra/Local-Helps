@@ -74,6 +74,7 @@ h1 {
 #searchButton {
     border-radius: 25px;
     background-color: #FF7F91;
+    border: none !important;
     color: white;
     font-family: Helvetica;
     padding: 10px 50px;
