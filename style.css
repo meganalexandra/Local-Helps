@@ -42,8 +42,9 @@ h1 {
     text-align: center;
     color: #949494;
     font-size: medium;
-    padding-right: 170px;
-    padding-left: 170px;
+    padding-right: 200px;
+    padding-left: 200px;
+    font-family: Helvetica;
 }
 
 #message {
@@ -75,12 +76,20 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 658px;
+    width: 60%;
     height: 221px;
     border-radius: 25px;
     background-color: #C4C4C4;
     opacity: 60%;
     padding: 10px 60px;
+}
+.center {
+    margin: auto;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #fields {
@@ -92,6 +101,10 @@ h1 {
 .flex-container {
     display: flex;
 }
+.table{
+    display: table;
+    margin:0 auto;
+}
 
 .flex-child{
     flex: 1;
@@ -101,13 +114,13 @@ h1 {
     child-align: right;
 }
 
-/*.flex-child left{*/
-/*    align-items: flex-end;*/
-/*}*/
-
-/*.flex-child right{*/
-/*    align-items: flex-start;*/
-/*}*/
+div.row-rap {
+    width: 100%;
+}
+div.row-rap .right, div.row-rap .left {
+    width: 50%;
+    float: left;
+}
 
 
 
