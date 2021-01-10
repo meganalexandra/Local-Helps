@@ -12,7 +12,7 @@ class Organization {
 };
 
 function filterCategory(category) {
-    // filtered.length = ;
+    filtered.length = ;
     for (let i=0; i < organizations.length; i++) {
         if (organizations[i].donations.includes(category)) {
             filtered.push(organizations[i]);
@@ -253,8 +253,8 @@ function parseListOfCharities() {
             }
         }
         new Organization(name, link, donations);
-        // let filtered = new Array();
     }
+    let filtered = new Array();
 }
 
 
