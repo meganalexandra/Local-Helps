@@ -5,10 +5,16 @@ class Organization {
         var donations = [];
     }
 
-    addDonation(donation) {
-        donations.push(donation)
+    // function addDonation(donation) {
+    //     donations.push(donation)
+    // }
+
+}
+
+let organizations = [{}];
+
+function filterCategory() {
+    for (let i=0; i < organizations.length; i++) {
+        const filtered = donations.filter(word => word == "category");
     }
-
-
-
 }
