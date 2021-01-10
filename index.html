@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div id="main frame">
+    <div id="container">
         <!-- Heading -->
         <div id="header">
             <img id="logo" src="localhelpslogo.png" width = 25% height = 10%>
@@ -28,18 +28,38 @@
             <p id = "sp1"> Support a local non-profit within Metro-Vancouver that accepts your specific donations</p>
         </div>
 
-        <div id="background">
+        <div id="background"></div>
+        <form>
+        <div class="flex-container">
 
+            <div class="flex-child left">
+                <input type="radio" id="Non-Perishable Foods" name="category"/> Non-PerishableFoods
+                <br>
+                <input type="radio" id="Perishable Foods" name="category"> Perishable Foods
+                <br>
+                <input type="radio" id="Furniture" name="category"> Furniture
+            </div>
+            <div class="flex child right">
+                <input type="radio" id="General Hygiene Products" name="category"> General Hygiene Products
+                <br>
+                <input type="radio" id="Feminine Hygiene Products" name="category"> Feminine Hygiene Products
+                <br>
+                <input type="radio" id="Clothing" name="category"> Clothing
+            </div>
+<!--            <div id="1">-->
+<!--            <input type="radio" id="Non-Perishable Foods" name="category"/> Non-PerishableFoods-->
+<!--            <input type="radio" id="General Hygiene Products" name="category"> General Hygiene Products-->
+<!--            </div>-->
+<!--            <div id="2">-->
+<!--            <input type="radio" id="Perishable Foods" name="category"> Perishable Foods-->
+<!--            <input type="radio" id="Feminine Hygiene Products" name="category"> Feminine Hygiene Products-->
+<!--            </div>-->
+<!--            <div id="3">-->
+<!--            <input type="radio" id="Furniture" name="category"> Furniture-->
+<!--            <input type="radio" id="Clothing" name="category"> Clothing-->
+<!--            </div>-->
         </div>
-
-        <div id="suggestionBox">
-            <div id="Non-Perishable Foods"></div>
-            <div id="General Hygiene Products"></div>
-            <div id="Perishable Foods"></div>
-            <div id="Feminine Hygiene Products"></div>
-            <div id="Furniture"></div>
-            <div id="Clothing"></div>
-        </div>
+            <form/>
 
         <div id="search">
             <button id="searchButton">

@@ -46,9 +46,7 @@ h1 {
 /*    color: #FF7F91;*/
 /*}*/
 
-#header {
-    display: flex;
-}
+
 
 #message {
     /*X: 0px;*/
@@ -60,7 +58,6 @@ h1 {
     font-style: bold;
     font-size: 350%;
     text-align: center;
-    padding: 10px 150px;
 }
 #donationButton {
     border-radius: 25px;
@@ -78,20 +75,17 @@ h1 {
     border: none !important;
     color: white;
     font-family: Helvetica;
-    padding: 10px 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
-#suggestionBox {
-    border-radius: 25px;
-    background-color: #C4C4C4;
-    opacity: 60%;
-    padding: 10px 60px;
+.flex-container {
+    display: flex;
 }
 
-#fields {
-    color: #FF7F91;
-    font-family: Helvetica;
-    font-size: large;
+
+.flex-child{
+    flex: 1;
 }
 
 

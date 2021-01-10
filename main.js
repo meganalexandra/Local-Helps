@@ -2,14 +2,14 @@ let organizations = [{}];
 let suggestions = [{}];
 
 class Organization {
-    constructor(name, link, address, pickup) {
+    constructor(name, link, pickup) {
         this.name = name;
         this.link = link;
 
         var donations = [];
         organizations.donations = donations;
         console.log(organizations);
-        this.address = address;
+        // this.address = address;
         pickup = null;
         var donations = {
             "nonPerishableFood" = nonPerishableFood;
