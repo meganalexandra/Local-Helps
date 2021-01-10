@@ -95,7 +95,8 @@ function parseListOfCharities() {
             "Furn": "0",
             "Book": "1"
         },
-        {"Name" : "Downtown Eastside Women's Centre",
+        {
+            "Name": "Downtown Eastside Women's Centre",
             "C_Link": "https://dewc.ca/donate",
             "PckUp": "0",
             "C_LocG": "WV",
@@ -111,7 +112,8 @@ function parseListOfCharities() {
             "Furn": "0",
             "Book": "0"
         },
-        {"Name" :"The Wildlife Thrift Store",
+        {
+            "Name": "The Wildlife Thrift Store",
             "C_Link": "https://www.wildlifethriftstore.com/donations",
             "PckUp": "0",
             "C_LocG": "DT",
@@ -127,7 +129,8 @@ function parseListOfCharities() {
             "Furn": "1",
             "Book": "1"
         },
-        {"Name":"VGH Thrift Store",
+        {
+            "Name": "VGH Thrift Store",
             "C_Link": "https://vghthriftstore.org/way-to-give/",
             "PckUp": "1",
             "C_LocG": "WV",
@@ -143,7 +146,8 @@ function parseListOfCharities() {
             "Furn": "1",
             "Book": "1"
         },
-        {"Name":"Helping Families in Need Society",
+        {
+            "Name": "Helping Families in Need Society",
             "C_Link": "http://hfin.webwindow.ca/wp/schedule-a-pickup/",
             "PckUp": "1",
             "C_LocG": "BB",
@@ -159,7 +163,8 @@ function parseListOfCharities() {
             "Furn": "1",
             "Book": "0"
         },
-        {"Name":"Vancouver Women's Health Collective",
+        {
+            "Name": "Vancouver Women's Health Collective",
             "C_Link": "https://womenshealthcollective.ca/giving/",
             "PckUp": "1",
             "C_LocG": "DT",
@@ -175,7 +180,8 @@ function parseListOfCharities() {
             "Furn": "0",
             "Book": "0"
         },
-        {"Name":"Greater Vancouver Food Bank",
+        {
+            "Name": "Greater Vancouver Food Bank",
             "C_Link": "https://foodbank.bc.ca/ways-to-give/donate-food/",
             "PckUp": "1",
             "C_LocG": "BB",
@@ -191,7 +197,8 @@ function parseListOfCharities() {
             "Furn": "0",
             "Book": "0"
         },
-        {"Name":"Covenant House Vancouver",
+        {
+            "Name": "Covenant House Vancouver",
             "C_Link": "https://www.covenanthousebc.org/ways-to-give/other-ways-to-give/donate-items/",
             "PckUp": "0",
             "C_LocG": "DT",
@@ -207,7 +214,8 @@ function parseListOfCharities() {
             "Furn": "0",
             "Book": "0"
         },
-        {"Name":"Sheway",
+        {
+            "Name": "Sheway",
             "C_Link": "http://www.vch.ca/locations-services/result?res_id=900",
             "PckUp": "1",
             "C_LocG": "DT",
@@ -223,7 +231,8 @@ function parseListOfCharities() {
             "Furn": "1",
             "Book": "1"
         },
-        {"Name":"Wish Drop In Centre",
+        {
+            "Name": "Wish Drop In Centre",
             "C_Link": "https://wish-vancouver.net/about/our-board/get-involved/wish-list/",
             "PckUp": "1",
             "C_LocG": "DT",
@@ -252,20 +261,17 @@ function parseListOfCharities() {
             // if (key === pickUp) {
             //     pickUp === Object.values(pickUp);
             // }
-            new Organization(name, link);
             // organization.push(`${key}: ${value}`);
             // if (key === "Name") {
             //     // console.log(`${key}: ${value}`);
             //     console.log(value);
-            console.log(organizations);
-
+            // }
         }
+        new Organization(name, link);
     }
-    // console.log(organization);
 }
-
-parseListOfCharities();
-
+    parseListOfCharities();
+    console.log(organizations);
 
 
 

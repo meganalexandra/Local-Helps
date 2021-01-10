@@ -70,8 +70,11 @@ h1 {
     border: none !important;
     color: white;
     font-family: Helvetica;
-    padding: 10px 60px
+    padding: 10px 60px;
+    margin-left: 600px;
+    margin-right: 600px;
 }
+
 #suggestionBox {
     display: flex;
     flex-wrap: wrap;
@@ -112,23 +115,28 @@ h1 {
 
 input[type=text], select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 15px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 25px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
-    width: 100%;
+    padding:10px 60px;
+    font-family: Helvetica;
+    width: 15%;
     background-color: #FF7F91;
     color: white;
-    padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 24px;
     cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ff667b;
 }
 
 /*.flex-child left{*/
@@ -141,7 +149,7 @@ div.row-rap {
 }
 
 div.row-rap .right, div.row-rap .left {
-    width: 50%;
+    width: 80%;
     float: left;
     font-family: Helvetica;
     color: black;
