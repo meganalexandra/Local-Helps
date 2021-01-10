@@ -14,15 +14,14 @@ class Organization {
 };
 
 
-function checkCategory(category) {
-    donations.includes(category)
-}
+// function checkCategory(category) {
+//     donations.includes(category)
+// }
 
 function filterCategory(category) {
     let filtered = new Array();
     for (let i=0; i < organizations.length; i++) {
-        let filtered = new Array();
-        if (checkCategory()) {
+        if (this.donations.includes(category)) {
             filtered.push(this);
         }
     }
@@ -263,7 +262,8 @@ function parseListOfCharities() {
     }
 }
     parseListOfCharities();
-    console.log(organizations);
+    filterCategory("food");
+    // console.log(organizations);
 
 
 
