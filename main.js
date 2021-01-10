@@ -218,7 +218,6 @@ function parseListOfCharities() {
     ];
     for (let i = 0; i < json.length; i++) {
         let donations = new Array();
-        // let organization = [];
         for (const [key, value] of Object.entries(json[i])) {
             if (key === "Name") {
                 var name = value;
@@ -254,7 +253,6 @@ function parseListOfCharities() {
         new Organization(name, link, donations);
     }
 }
-    // console.log(organizations);
 
 
 
