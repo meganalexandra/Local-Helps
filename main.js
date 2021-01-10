@@ -1,10 +1,12 @@
 let organizations = new Array();
-let suggestions = [{}];
+let suggestions = new Array();
+let donations = new Array();
 
 class Organization {
-    constructor(name, link, donation) {
+    constructor(name, link, donations) {
         this.name = name;
         this.link = link;
+        this.donations = donations
 
         // var donations = [];
         // organizations.donations = donations;
@@ -31,12 +33,13 @@ class Organization {
 
 
 function checkCategory(category) {
-    for (let i=0; i < donations.length; i++) {
-        if (donations[i] == category) {
-            return true;
-        }
-        return false;
-    }
+    donations.includes(category)
+    // for (let i=0; i < donations.length; i++) {
+    //     if (donations[i] == category) {
+    //         return true;
+    //     }
+    //     return false;
+    // }
 }
 
 // function filterCategory() {
@@ -46,13 +49,14 @@ function checkCategory(category) {
 // }
 
 function filterCategory(category) {
-    let filtered = [];
+    let filtered = new Array();
     for (let i=0; i < organizations.length; i++) {
-        if (this.checkCategory()) {
+        if (checkCategory()) {
             filtered.push(this);
         }
     }
     return filtered;
+    console.log(filtered)
 }
 
 class Suggestions {
@@ -267,11 +271,15 @@ function parseListOfCharities() {
             //     console.log(value);
             // }
         }
-        new Organization(name, link);
+        new Organization(name, link, donations);
     }
 }
     parseListOfCharities();
     console.log(organizations);
 
+new Organization("Big Brother", 'https://www.bigbrothersvancouver.com/clothing-donation/book-a-pick-up/'
+    , ["food","clothing"]);
+new Organization( 'Greater Vancouver Food Bank', 'https://foodbank.bc.ca/ways-to-give/donate-food/'
+    , ["feminine hygiene","general hygiene"]);
 
 
