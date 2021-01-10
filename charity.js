@@ -12,14 +12,29 @@ class Organization {
     //     donations.push(donation)
     // }
 
-}
-
-function filterCategory() {
-    for (let i=0; i < organizations.length; i++) {
-        const filtered = this.donations.filter(word => word == "category");
+    function checkCategory(category) {
+        for (let i=0; i < donations.length; i++) {
+            if (donation == category) {
+                return true;
+            }
+            return false;
+        }
     }
+
 }
 
-function filterDonations(donation) {
+// function filterCategory() {
+//     for (let i=0; i < organizations.length; i++) {
+//         const filtered = this.donations.filter(word => word == "category");
+//     }
+// }
 
+function filterCategory(category) {
+    let filtered = [];
+    for (let i=0; i < organizations.length; i++) {
+        if (this.checkCategory()) {
+            filtered.push(this);
+        }
+    }
+    return filtered;
 }
