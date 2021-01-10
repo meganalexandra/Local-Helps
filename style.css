@@ -36,6 +36,8 @@ h1 {
     text-align: center;
     color: #949494;
     font-size: medium;
+    padding-right: 170px;
+    padding-left: 170px;
 }
 
 #message {
