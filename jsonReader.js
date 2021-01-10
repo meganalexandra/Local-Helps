@@ -1,17 +1,3 @@
-// class JsonReader {
-//     var source;
-// }
-//
-// function jsonReader(source) {
-//     this.source = source;
-// }
-//
-// function read() {
-//     var jsonData = readFile(source);
-//     jsonObject = new JSONObject(jsonData);
-//     return parseListOfCharities(jsonObject);
-// }
-
 function parseListOfCharities() {
     const json = [
         {
@@ -64,10 +50,6 @@ function parseListOfCharities() {
             console.log(`${key}: ${value}`);
         }
     }
-    // for (i = 0; i < charities.length; i++) {
-    //     charity = charities[i];
-    //     addCharity(charities, charity);
-    // }
 }
 parseListOfCharities();
 
