@@ -15,7 +15,7 @@ function read() {
 
 function parseListOfCharities(jsonObject) {
     var charities = {
-        name = jsonObject.stringify("C_name");
+        jsonObject.stringify("C_name") = name;
         link = jsonObject.stringify("C_Link");
         pickUp = jsonObject.stringify("PckUp");
         donations = {
