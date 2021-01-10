@@ -13,7 +13,7 @@ class Organization {
     }
 };
 
-
+//
 // function checkCategory(category) {
 //     donations.includes(category)
 // }
