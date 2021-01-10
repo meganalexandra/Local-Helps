@@ -1,17 +1,62 @@
-h1 {X: 122px;
-    Y: 12px;
-    W: 255.96px;
-    H: 77px;
+/*h1 {width: 257px;*/
+/*    height: 58px;*/
+/*    top: 21px;*/
+/*    left: 109px;*/
+#main frame{
+    width: 1440px;
+    height: 857px;
+}
+
+h1 {
+    X-constraint: Left;
+    Y-constraint: Top;
     color: #559461;
+    font-family: Rockwell;
+    font-size: 49.5px;
+    align: Left;
+    vertical-align: Center;
+    letter-spacing: 0.49px;
+
 }
 
 #heart {
+    width: 35.75px;
+    height: 41.24px;
+    top:25.7px;
+    left:369.5px;
     X: 369.5px;
     Y: 25.75px;
     W: 35.75px;
     H: 41.25px;
+    X-constraint: Scale;
+    Y-constraint: Scale;
     color: #FF7F91;
 }
+
+#header {display: flex;}
+
+h2 {
+    /*X: 0px;*/
+    /*Y: 0px;*/
+    /*W: 640px;*/
+    /*H: 110.82px;*/
+    color: #1B1B1B;
+    text-style: web-h1;
+    font-family: Raleway;
+    font-style: bold;
+    font-size: 48px;
+    line-height: 58px;
+    line-height: 103%;
+    align: Center;
+    vertical-align: Top;
+    letter-spacing: 0.2px;
+    number-case: Lining;
+    number-spacing: Proportional;
+    color-Style: title;
+    fill: Solid;
+}
+
+
 
 
 
