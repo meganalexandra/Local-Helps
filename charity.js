@@ -11,16 +11,15 @@ class Organization {
     // function addDonation(donation) {
     //     donations.push(donation)
     // }
+};
 
-    function checkCategory(category) {
-        for (let i=0; i < donations.length; i++) {
-            if (donation == category) {
-                return true;
-            }
-            return false;
+function checkCategory(category) {
+    for (let i=0; i < donations.length; i++) {
+        if (donations[i] == category) {
+            return true;
         }
+        return false;
     }
-
 }
 
 // function filterCategory() {
