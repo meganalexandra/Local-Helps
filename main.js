@@ -1,6 +1,6 @@
-let organizations = new Array();
-let suggestions = new Array();
-let filtered = new Array();
+var organizations = new Array();
+var suggestions = new Array();
+var filtered = new Array();
 
 class Organization {
     constructor(name, link, donations) {
