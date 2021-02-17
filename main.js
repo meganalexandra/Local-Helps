@@ -24,10 +24,10 @@ function filterCategory(category) {
 
 function printResults() {
     for (var i=0; i < filtered.length;i++) {
-        names.push(filtered[i].name.replace(/,/g, "") + "<br>");   // trying to remove comma but not working     
+        names.push(filtered[i].name);  
         // document.write(filtered[i].name + "<br>");
     }  
-     document.getElementById("lists").innerHTML= names; 
+     document.getElementById("lists").innerHTML= names.join("</br>"); 
 }
 
 class Suggestions {
