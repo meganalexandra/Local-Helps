@@ -20,6 +20,8 @@ body {
 }
 #header {
     display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 a, a:visited {
