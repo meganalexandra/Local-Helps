@@ -19,9 +19,12 @@ function filterCategory(category) {
             filtered.push(organizations[i]);
         }
     }
-    // return filtered;
-    // console.log(filtered);
-    // displayNames(filtered);
+}
+
+function printResults() {
+    for (var i=0; i < filtered.length;i++) {
+        document.write(filtered[i].name + "<br>");
+    }    
 }
 
 class Suggestions {
