@@ -27,7 +27,7 @@ function printResults() {
         names.push(filtered[i].name);        
         // document.write(filtered[i].name + "<br>");
     }  
-     document.getElementById("list").innerHTML=names; 
+     document.getElementById("lists").innerHTML= names; 
 }
 
 class Suggestions {
