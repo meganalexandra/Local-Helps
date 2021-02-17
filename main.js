@@ -1,6 +1,7 @@
 var organizations = new Array();
 var suggestions = new Array();
 var filtered = new Array();
+var names = new Array();
 
 class Organization {
     constructor(name, link, donations) {
@@ -23,7 +24,8 @@ function filterCategory(category) {
 
 function printResults() {
     for (var i=0; i < filtered.length;i++) {
-        document.write(filtered[i].name + "<br>");
+        names.push(filtered[i].name);        
+        // document.write(filtered[i].name + "<br>");
     }    
 }
 
