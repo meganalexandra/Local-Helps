@@ -47,6 +47,15 @@ h1 {
     font-family: Helvetica;
 }
 
+#list {
+    text-align: center;
+    color: #949494;
+    font-size: medium;
+    padding-right: 200px;
+    padding-left: 200px;
+    font-family: Helvetica;
+}
+
 #message {
     color: #1B1B1B;
     font-family: Helvetica;
