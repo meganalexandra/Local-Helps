@@ -30,6 +30,11 @@ function printResults() {
      document.getElementById("lists").innerHTML= names.join("</br>"); 
 }
 
+function reset() {
+    lists.remove();
+    filtered.length = 0;
+}
+
 class Suggestions {
     votes = 0;
     constructor(name, website) {
