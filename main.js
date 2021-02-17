@@ -14,7 +14,6 @@ class Organization {
 };
 
 function filterCategory(category) {
-    filtered.length = 0;
     for (let i=0; i < organizations.length; i++) {
         if (organizations[i].donations.includes(category)) {
             filtered.push(organizations[i]);
@@ -25,14 +24,14 @@ function filterCategory(category) {
 function printResults() {
     for (var i=0; i < filtered.length;i++) {
         names.push(filtered[i].name);  
-        // document.write(filtered[i].name + "<br>");
     }  
      document.getElementById("lists").innerHTML= names.join("</br>"); 
+     document.getElementById("lists").style.display = "block";
 }
 
 function reset() {
-    lists.remove();
     filtered.length = 0;
+    document.getElementById("lists").style.display = "none";
 }
 
 class Suggestions {

@@ -158,11 +158,10 @@ input[type=submit] {
     background-color: #ff667b;
 }
 
-#searchButton, #resetButton {
+#mainButtons {
+    text-align: center;
     display: inline-block;
 }
-
-
 
 div.row-rap {
     width: 100%;
