@@ -83,20 +83,91 @@
             map:map
         })
 
-
         var wdc = new google.maps.Marker({
             position:{  lat: 49.283770, lng: -123.096430},
             map:map
         })
 
-        var infoWindow = new google.maps.InfoWindow({
+        var dewcWindow = new google.maps.InfoWindow({
             content: "<h1>Downtown Eastside Women's shelter</hi>"
         })
 
-        dewc.addListener("click", function(){
-            infoWindow.open(map, dewc)
+        var bbWindow = new google.maps.InfoWindow({
+            content: "<h1>Big Brother</hi>"
         })
-    }
+
+        var wtsWindow = new google.maps.InfoWindow({
+            content: "<h1>The Wildlife Thrift Store</hi>"
+        })
+
+        var vghWindow = new google.maps.InfoWindow({
+            content: "<h1>VGH Thriftstore</hi>"
+        })
+
+        var hpnWindow = new google.maps.InfoWindow({
+            content: "<h1>Helping Families in Need Society</hi>"
+        })
+
+        var vwhcWindow = new google.maps.InfoWindow({
+            content: "<h1>Vancouver Women's Health Collective</hi>"
+        })
+
+        var vgfbWindow = new google.maps.InfoWindow({
+            content: "<h1>Greater Vancouver Food Bank</hi>"
+        })
+
+        var chWindow = new google.maps.InfoWindow({
+            content: "<h1>Covenant House Vancouver</hi>"
+        })
+
+        var sWindow = new google.maps.InfoWindow({
+            content: "<h1>Sheway</hi>"
+        })
+
+        var wdcWindow = new google.maps.InfoWindow({
+            content: "<h1>Wish Drop In Centre</hi>"
+        })    
+
+        dewc.addListener("click", function(){
+            dewcWindow.open(map, dewc)
+        })
+
+        bb.addListener("click", function(){
+            bbWindow.open(map, bb)
+        })
+
+        wts.addListener("click", function(){
+            wtsWindow.open(map, wts)
+        })
+
+        vgh.addListener("click", function(){
+            vghWindow.open(map, vgh)
+        })
+
+        hpn.addListener("click", function(){
+            hpnWindow.open(map, hpn)
+        })
+
+        vwhc.addListener("click", function(){
+            vwhcWindow.open(map, vwhc)  
+        })
+
+        vgfb.addListener("click", function(){
+            vgfbWindow.open(map, vgfb)        
+        })
+
+        ch.addListener("click", function(){
+            chWindow.open(map, ch)        
+        })       
+
+        s.addListener("click", function(){
+            sWindow.open(map, s)        
+        })   
+
+        wdc.addListener("click", function(){
+            wdcWindow.open(map, wdc)        
+        })                 
+    }   
 </script>
 
 <script async defer
